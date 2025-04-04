@@ -1,0 +1,7 @@
+{
+    "enum": [
+        "fixed",
+        "random"
+    ],
+    "type": "string"
+}

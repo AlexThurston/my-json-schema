@@ -1,0 +1,9 @@
+{
+  "$id": "ivGen",
+  "items": {
+    "type": "integer",
+    "enum": [32, 64, 96, 104, 112, 120, 128]
+  },
+  "minItems": 1,
+  "type": "array"
+}

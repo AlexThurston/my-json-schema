@@ -1,0 +1,8 @@
+{
+  "$id": "keyingOption.schema.json",
+  "type": "array",
+  "items": {
+    "type": "number",
+    "enum": [1, 2]
+  }
+}

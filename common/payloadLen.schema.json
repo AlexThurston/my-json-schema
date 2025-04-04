@@ -1,0 +1,8 @@
+{
+  "$id": "payloadLen",
+  "properties": {
+    "type": {
+      "$ref": "domain.schema.json"
+    }
+  }
+}

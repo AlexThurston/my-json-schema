@@ -1,0 +1,12 @@
+{
+    "items": {
+        "enum": [
+            "ED-25519",
+            "ED-448"
+        ],
+        "type": "string"
+    },
+    "minItems": 1,
+    "type": "array",
+    "uniqueItems": true
+}

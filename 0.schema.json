@@ -1,0 +1,181 @@
+{
+  "additionalProperties": false,
+  "definitions": {
+    "aadLen": {
+      "items": {
+        "oneOf": [
+          {
+            "additionalProperties": false,
+            "properties": {
+              "increment": {
+                "maximum": 65536,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "max": {
+                "maximum": 65536,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "min": {
+                "maximum": 65536,
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "min",
+              "max",
+              "increment"
+            ],
+            "type": "object"
+          },
+          {
+            "maximum": 65536,
+            "minimum": 0,
+            "type": "integer"
+          }
+        ]
+      },
+      "type": "array"
+    },
+    "ivLen": {
+      "items": {
+        "oneOf": [
+          {
+            "additionalProperties": false,
+            "properties": {
+              "increment": {
+                "maximum": 1024,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "max": {
+                "maximum": 1024,
+                "minimum": 8,
+                "type": "integer"
+              },
+              "min": {
+                "maximum": 1024,
+                "minimum": 8,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "min",
+              "max",
+              "increment"
+            ],
+            "type": "object"
+          },
+          {
+            "maximum": 1024,
+            "minimum": 8,
+            "type": "integer"
+          }
+        ]
+      },
+      "type": "array"
+    },
+    "payloadLen": {
+      "items": {
+        "oneOf": [
+          {
+            "additionalProperties": false,
+            "properties": {
+              "increment": {
+                "maximum": 65536,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "max": {
+                "maximum": 65536,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "min": {
+                "maximum": 65536,
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "min",
+              "max",
+              "increment"
+            ],
+            "type": "object"
+          },
+          {
+            "maximum": 65536,
+            "minimum": 0,
+            "type": "integer"
+          }
+        ]
+      },
+      "type": "array"
+    },
+    "tagLen": {
+      "items": {
+        "enum": [
+          32,
+          64,
+          96,
+          104,
+          112,
+          120,
+          128
+        ],
+        "type": "integer"
+      },
+      "type": "array"
+    }
+  },
+  "properties": {
+    "aadLen": {
+      "$ref": "#/definitions/aadLen"
+    },
+    "algorithm": {
+      "pattern": "(?i)^acvp-aes-gcm$",
+      "type": "string"
+    },
+    "direction": {
+      "$ref": "common/direction.schema.json"
+    },
+    "ivGen": {
+      "$ref": "common/ivGen.schema.json"
+    },
+    "ivGenMode": {
+      "$ref": "common/ivGenMode.schema.json"
+    },
+    "ivLen": {
+      "$ref": "#/definitions/ivLen"
+    },
+    "keyLen": {
+      "$ref": "common/keyLen.schema.json"
+    },
+    "payloadLen": {
+      "$ref": "#/definitions/payloadLen"
+    },
+    "revision": {
+      "const": "1.0"
+    },
+    "tagLen": {
+      "$ref": "#/definitions/tagLen"
+    }
+  },
+  "required": [
+    "algorithm",
+    "revision",
+    "direction",
+    "keyLen",
+    "payloadLen",
+    "ivLen",
+    "ivGen",
+    "ivGenMode",
+    "aadLen",
+    "tagLen"
+  ],
+  "title": "ACVP-AES-GCM  1.0",
+  "type": "object"
+}

@@ -1,0 +1,20 @@
+{
+  "items": {
+    "enum": [
+      "SHA2-224",
+      "SHA2-256",
+      "SHA2-384",
+      "SHA2-512",
+      "SHA2-512/224",
+      "SHA2-512/256",
+      "SHA3-224",
+      "SHA3-256",
+      "SHA3-384",
+      "SHA3-512"
+    ],
+    "type": "string"
+  },
+  "minItems": 1,
+  "type": "array",
+  "uniqueItems": true
+}

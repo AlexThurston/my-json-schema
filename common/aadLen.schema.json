@@ -1,0 +1,8 @@
+{
+  "$id": "aadLen",
+  "properties": {
+    "type": {
+      "$ref": "domain.schema.json"
+    }
+  }
+}

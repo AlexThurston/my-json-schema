@@ -1,0 +1,10 @@
+{
+    "enum": [
+        "provable",
+        "probable",
+        "provableWithProvableAux",
+        "probableWithProvableAux",
+        "probableWithProbableAux"
+    ],
+    "type": "string"
+}

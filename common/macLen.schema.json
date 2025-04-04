@@ -1,0 +1,35 @@
+{
+  "$id": "macLen",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "oneOf": [
+      {
+        "additionalProperties": false,
+        "required": ["min", "max", "increment"],
+        "properties": {
+          "increment": {
+            "const": 8
+          },
+          "max": {
+            "type": "integer",
+            "maximum": 65536,
+            "minimum": 32
+          },
+          "min": {
+            "type": "integer",
+            "minimum": 32,
+            "maximum": 65536
+          }
+        },
+        "type": "object"
+      },
+      {
+        "type": "integer",
+        "minimum": 32,
+        "maximum": 65536,
+        "multipleOf": 8
+      }
+    ]
+  }
+}

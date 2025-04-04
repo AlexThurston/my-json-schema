@@ -1,0 +1,5 @@
+{
+  "$id": "ivGenMode",
+  "enum": ["8.2.1", "8.2.2"],
+  "type": "string"
+}

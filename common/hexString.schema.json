@@ -1,0 +1,5 @@
+{
+      "description": "A hexadecimal string (case insensitive)",
+      "pattern": "^[0-9a-fA-F]+$",
+      "type": "string"
+}

@@ -1,0 +1,27 @@
+{
+  "$id": "domain",
+  "items": {
+    "oneOf": [
+      {
+        "additionalProperties": false,
+        "required": ["min", "max", "increment"],
+        "properties": {
+          "increment": {
+            "type": "integer"
+          },
+          "max": {
+            "type": "integer"
+          },
+          "min": {
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      {
+        "type": "integer"
+      }
+    ]
+  },
+  "type": "array"
+}

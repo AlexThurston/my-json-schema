@@ -1,0 +1,10 @@
+{
+  "items": {
+    "enum": [
+      "SP800-106"
+    ],
+    "type": "string"
+  },
+  "type": "array",
+  "uniqueItems": true
+}

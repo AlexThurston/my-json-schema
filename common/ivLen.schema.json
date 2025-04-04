@@ -1,0 +1,8 @@
+{
+  "$id": "ivLen",
+  "properties": {
+    "type": {
+      "$ref": "domain.schema.json"
+    }
+  }
+}

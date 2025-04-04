@@ -1,0 +1,29 @@
+{
+  "$id": "domain",
+  "items": {
+    "oneOf": [
+      {
+        "properties": {
+          "inc": {
+            "type": "number"
+          },
+          "max": {
+            "type": "number",
+            "minimum" : 1,
+            "maximum" : 65536
+          },
+          "min": {
+            "type": "number",
+            "minimum" : 0,
+            "maximum" : 65535
+          }
+        },
+        "type": "object"
+      },
+      {
+        "type": "number"
+      }
+    ]
+  },
+  "type": "array"
+}

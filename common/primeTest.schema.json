@@ -1,0 +1,12 @@
+{
+    "items": {
+        "enum": [
+            "2pow100",
+            "2powSecStr"
+        ],
+        "type": "string"
+    },
+    "minItems": 1,
+    "type": "array",
+    "uniqueItems": true
+}

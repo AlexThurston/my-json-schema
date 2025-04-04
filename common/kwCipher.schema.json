@@ -1,0 +1,9 @@
+{
+  "$id": "kwCipher",
+  "items": {
+    "enum": ["cipher", "inverse"],
+    "type": "string"
+  },
+  "minItems": 1,
+  "type": "array"
+}

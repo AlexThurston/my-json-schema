@@ -1,0 +1,5 @@
+{
+  "$id": "ivGen",
+  "enum": ["internal", "external"],
+  "type": "string"
+}

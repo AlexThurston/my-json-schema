@@ -1,0 +1,13 @@
+{
+  "$id": "direction",
+  "items": {
+    "enum": [
+      "encrypt",
+      "decrypt"
+    ],
+    "type": "string"
+  },
+  "minItems": 1,
+  "type": "array",
+  "uniqueItems": true
+}

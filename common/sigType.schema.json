@@ -1,0 +1,8 @@
+{
+    "enum": [
+        "ansx9.31",
+        "pkcs1v1.5",
+        "pss"
+    ],
+    "type": "string"
+}

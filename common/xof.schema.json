@@ -1,0 +1,8 @@
+{
+  "$id": "xof",
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "type": "boolean"
+  }
+}

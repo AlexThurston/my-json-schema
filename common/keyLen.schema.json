@@ -1,0 +1,14 @@
+{
+  "$id": "keyLen",
+  "items": {
+    "enum": [
+      128,
+      192,
+      256
+    ],
+    "type": "number"
+  },
+  "minItems": 1,
+  "type": "array",
+  "uniqueItems": true
+}

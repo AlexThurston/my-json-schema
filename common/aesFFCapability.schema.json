@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "alphabet": {
+      "type": "string"
+    },
+    "radix": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 64
+    },
+    "minLen": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "maxLen": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$id": "scheme",
+  "properties": {
+    "email": {
+      "format": "email",
+      "type": "string"
+    },
+    "kasRole": {
+      "items": {
+        "enum": [
+          "initiator",
+          "responder"
+        ],
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "kasRole"
+  ],
+  "type": "object"
+}
