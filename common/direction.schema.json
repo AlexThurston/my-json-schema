@@ -1,5 +1,6 @@
 {
   "$id": "direction",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "items": {
     "enum": [
       "encrypt",
@@ -8,6 +9,7 @@
     "type": "string"
   },
   "minItems": 1,
+  "title": "Direction",
   "type": "array",
   "uniqueItems": true
 }
