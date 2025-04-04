@@ -140,19 +140,19 @@
       "type": "string"
     },
     "direction": {
-      "$ref": "common/direction.schema.json"
+      "$ref": "https://alexthurston.github.io/my-json-schema/common/direction.schema.json"
     },
     "ivGen": {
-      "$ref": "common/ivGen.schema.json"
+      "$ref": "https://alexthurston.github.io/my-json-schema/common/ivGen.schema.json"
     },
     "ivGenMode": {
-      "$ref": "common/ivGenMode.schema.json"
+      "$ref": "https://alexthurston.github.io/my-json-schema/common/ivGenMode.schema.json"
     },
     "ivLen": {
       "$ref": "#/definitions/ivLen"
     },
     "keyLen": {
-      "$ref": "common/keyLen.schema.json"
+      "$ref": "https://alexthurston.github.io/my-json-schema/common/keyLen.schema.json"
     },
     "payloadLen": {
       "$ref": "#/definitions/payloadLen"
