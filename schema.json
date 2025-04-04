@@ -3,5 +3,6 @@
   "properities": {
     "fname": {
       "type": "string"
+    }
   }
 }
